@@ -6,6 +6,7 @@ export class App extends Component {
   state = {
     name: '',
     page: 1,
+    photo: [],
   };
 
   incrementPage = () => {
@@ -17,9 +18,14 @@ export class App extends Component {
   onSubmit = event => {
     event.preventDefault();
     const searchName = event.currentTarget.name.value;
+    if (searchName === this.state.name || searchName === '') {
+      return;
+    }
+
     this.setState({
       name: searchName,
       page: 1,
+      photo: [],
     });
   };
 

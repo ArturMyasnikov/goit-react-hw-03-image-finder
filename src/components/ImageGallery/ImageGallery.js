@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 export default class ImageGallery extends Component {
   state = {
-    photo: '',
+    photo: [],
     totalHits: '',
     showModal: false,
     largeImageURL: null,

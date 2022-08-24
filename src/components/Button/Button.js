@@ -23,5 +23,6 @@ export default class Button extends Component {
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  incrementPage: PropTypes.func.isRequired,
+  page: PropTypes.number,
 };
